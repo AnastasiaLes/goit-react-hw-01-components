@@ -1,8 +1,8 @@
 {
-  "name": "react-homework-01",
+  "name": "goit-react-hw-01-components",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AnastasiaLes.github.io/react-homework-01/",
+  "homepage": "https://AnastasiaLes.github.io/goit-react-hw-01-components/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
