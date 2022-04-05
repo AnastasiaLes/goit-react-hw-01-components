@@ -1,8 +1,6 @@
 import { Container } from './App.styled';
 import { SocialProfile } from '../../components/SocialProfile/SocialProfile';
-// import { Statistics } from 'components/Statistics/Statistics';
 import user from '../../social-profile/user.json';
-// import stats from '../../statistics/data.json'
 
 export const App = () => {
   return (
@@ -16,9 +14,6 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      {/* <Statistics
-        key={stats.id}
-        stats={stats} /> */}
     </Container>
   );
 };
