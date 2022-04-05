@@ -7,6 +7,7 @@ export const StatisticsCard = styled.section`
   height: 100%;
   border-radius: 2%;
   box-shadow: 3px 3px 2px #888888;
+  margin-right: 50px;
 `;
 
 export const StatisticsTitle = styled.h2`

@@ -3,6 +3,8 @@ import { SocialProfile } from '../../components/SocialProfile/SocialProfile';
 import user from '../../social-profile/user.json';
 import { Statistics } from 'components/Statistics/Statistics';
 import stats from '../../statistics/data.json';
+import { FriendsList } from '../Friends/Friends';
+import friends from '../../friend-list/friends.json';
 
 export const App = () => {
   return (
@@ -17,6 +19,7 @@ export const App = () => {
         likes={user.stats.likes}
       />
       <Statistics key={stats.id} stats={stats} />
+      <FriendsList key={friends.id} friends={friends} />
     </Container>
   );
 };
