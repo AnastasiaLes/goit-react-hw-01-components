@@ -1,17 +1,24 @@
+import { Container } from './App.styled';
+import { SocialProfile } from '../../components/SocialProfile/SocialProfile';
+// import { Statistics } from 'components/Statistics/Statistics';
+import user from '../../social-profile/user.json';
+// import stats from '../../statistics/data.json'
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
-      }}
-    >
-      React homework 123
-    </div>
+    <Container>
+      <SocialProfile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
+      {/* <Statistics
+        key={stats.id}
+        stats={stats} /> */}
+    </Container>
   );
 };
