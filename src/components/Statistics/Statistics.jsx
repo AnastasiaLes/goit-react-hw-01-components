@@ -8,11 +8,10 @@ import {
   StatisticsElementPercentage,
 } from './Statistics.styled';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <StatisticsCard>
-      <StatisticsTitle>Upload stats</StatisticsTitle>
-
+      {title && <StatisticsTitle>Upload stats</StatisticsTitle>}
       <StatisticsList>
         {stats.map(stat => (
           <StatisticsElement id={stat.id} key={stat.id}>

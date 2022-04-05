@@ -21,11 +21,12 @@ export const App = () => {
           views={user.stats.views}
           likes={user.stats.likes}
         />
-        <Statistics key={stats.id} stats={stats} />
-        <FriendsList key={friends.id} friends={friends} />
+        <Statistics title="Upload stats" stats={stats} />
+        {/* <Statistics stats={stats} /> */}
+        <FriendsList friends={friends} />
       </Wrap>
 
-      <TransactionHistory key={transactions.id} transactions={transactions} />
+      <TransactionHistory transactions={transactions} />
     </Container>
   );
 };
