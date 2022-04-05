@@ -16,6 +16,24 @@ export const StatisticsTitle = styled.h2`
   font-size: 16px;
   color: #696969;
 `;
+
+const setBgColor = props => {
+  switch (props.id) {
+    case 'id-1':
+      return 'red';
+    case 'id-2':
+      return 'green';
+    case 'id-3':
+      return 'blue';
+    case 'id-4':
+      return 'orange';
+    case 'id-5':
+      return 'teal';
+    default:
+      return 'black';
+  }
+};
+
 export const StatisticsList = styled.ul`
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -26,20 +44,7 @@ export const StatisticsElement = styled.li`
   /* border: solid 1px #E0E0E0; */
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: ${props => {
-    switch (props.id) {
-      case 'id-1':
-        return 'red';
-      case 'id-2':
-        return 'green';
-      case 'id-3':
-        return 'blue';
-      case 'id-4':
-        return 'orange';
-      case 'id-5':
-        return 'teal';
-    }
-  }};
+  background-color: ${setBgColor};
   color: #fff;
 `;
 

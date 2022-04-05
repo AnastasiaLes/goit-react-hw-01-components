@@ -8,7 +8,7 @@ import {
   StatisticsElementPercentage,
 } from './Statistics.styled';
 
-export const Statistics = ({ title, stats }) => {
+export const Statistics = ({ stats }) => {
   return (
     <StatisticsCard>
       <StatisticsTitle>Upload stats</StatisticsTitle>
