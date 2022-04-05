@@ -4,8 +4,8 @@ export const ProfileCard = styled.div`
   background-color: white;
   margin-left: 100px;
   margin-right: 50px;
-  margin-bottom: 500px;
   width: 300px;
+  height: fit-content;
   display: block;
   text-align: center;
   border-radius: 2%;
